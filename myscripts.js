@@ -18,13 +18,3 @@ closeButton.addEventListener('click', (e) => {
   mobileMenu.classList.add('mobile-menu');
   mobileMenu.classList.remove('mobile-menu-style');
 });
-
-for (let i = 0; i < 100; i += 1) {
-  console.log('Success');
-}
-
-if (burgerButton) {
-  if (closeButton) {
-    console.log('Please try again');
-  }
-}
