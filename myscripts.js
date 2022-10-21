@@ -1,10 +1,9 @@
 const burgerButton = document.querySelector('.fa-bars');
 const closeButton = document.querySelector('.mobile-menu-i');
 const mobileMenu = document.querySelector('.mobile-menu');
-const body = document.querySelector('body');
+// const body = document.querySelector('body');
 
 burgerButton.addEventListener('click', (e) => {
-  body.style.overflow = 'hidden';
   e.target.style.visibility = 'hidden';
   closeButton.style.visibility = 'visible';
   mobileMenu.classList.remove('mobile-menu');
@@ -12,7 +11,6 @@ burgerButton.addEventListener('click', (e) => {
 });
 
 closeButton.addEventListener('click', (e) => {
-  body.style.overflow = 'visible';
   e.target.style.visibility = 'hidden';
   burgerButton.style.visibility = 'visible';
   mobileMenu.classList.add('mobile-menu');
